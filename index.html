@@ -33,7 +33,10 @@
 </head>
 <body>
   <script>
-    document.write('<div style="text-align:right">Last updated: ' + document.lastModified+'</div>');
+    var modified = new Date(document.lastModified);
+    var month = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+    document.write('<div style="text-align:right">Last updated: ' + modified.getDate()+ ' ' + month[modified.getMonth()]
+		+ ' ' + modified.getFullYear() + '</div>');
   </script>
   <hr>
   <a href="img/joku-iko.jpg"><img src="img/joku-iko_s.jpg" style="float:right;width:270px;margin:0px 0px 10px 10px"></a>
