@@ -28,6 +28,22 @@
     dd {
       margin-left:13em;
     }
+    ol.bracket {
+      margin-left: 0em;
+    }
+    ol.bracket>li {
+      list-style-type: none;
+      counter-increment: list -1;
+      position: relative;
+    }
+    ol.bracket>li:before {
+      content: '[' counter(list) ']';
+      display: inline-block;
+      text-align: right;
+      position: absolute;
+      margin-left: -3.5em;
+      width: 3em;
+    }
   </style>
   <meta name="google-site-verification" content="k6VtneW2UJiDRpWBJKTtH1G_aAvgiQw4t1DRMgDrKYY" />
 </head>
@@ -60,7 +76,11 @@
   </p>
   <hr style="clear:right;">
   <h2>Papers</h2>
-  <ol reversed>
+  <ol reversed class="bracket">
+    <li>
+      Oka tubes in holomorphic line bundles. (with F. Forstnerič)<br>
+      <a href="https://arxiv.org/abs/2310.14871" target="_blank">arXiv:2310.14871</a>
+    </li>
     <li>
       On the fundamental groups of subelliptic varieties.<br>
       <a href="https://arxiv.org/abs/2212.07085" target="_blank">arXiv:2212.07085</a>
@@ -71,7 +91,7 @@
     </li>
     <li>
       Oka properties of complements of holomorphically convex sets.<br>
-      Ann. of Math. (2), to appear<br>
+      <a href="https://annals.math.princeton.edu/articles/21160" target="_blank">Ann. of Math. (2), to appear</a><br>
       <a href="http://arxiv.org/abs/2005.08247" target="_blank">arXiv:2005.08247</a>
     </li>
     <li>
@@ -107,7 +127,7 @@
   </ol>
   <hr>
   <h2>Notes</h2>
-  <ol reversed>
+  <ol reversed class="bracket">
     <li>
       <a href="pdf/MSJ2021_ellipticity.pdf" target="_blank">岡多様体と楕円性</a>. (Japanese)<br>
       日本数学会2021年度年会講演アブストラクト, 2021
@@ -127,21 +147,21 @@
   </ol>
   <hr>
   <h2>Talks</h2>
-  <ol reversed>
+  <ol reversed class="bracket">
     <li>
       TBA.<br>
       <a href="https://tkoike.com/conf_2023/2024Jan.html" target="_blank">Workshop on Dynamics in Arithmetic and Complex Geometry and its Applications</a>, Osaka Metropolitan University, 16–19 January 2024
     </li>
     <li>
-      TBA.<br>
+      Oka tubes in holomorphic line bundles.<br>
       <a href="https://sites.google.com/view/2023scvwinter/" target="_blank">Winter Seminar on Several Complex Variables 2023</a>, University of Tsukuba, 15–17 December 2023
     </li>
     <li>
-      TBA.<br>
+      Gromov's elliptic geometry from the viewpoints of foliations and dynamics.<br>
       <a href="https://tkoike.com/conf_2023/2023Nov.html" target="_blank">Problems on Foliations and Dynamics in Complex Geometry</a>, RIMS, Kyoto University, 20–22 November 2023
     </li>
     <li>
-      TBA.<br>
+      Toward Gromov's Oka principle with growth conditions.<br>
       <a href="https://www.fmf.uni-lj.si/en/research/complex-analysis-seminar/" target="_blank">Complex Analysis Seminar</a>, University of Ljubljana, 10 October 2023
     </li>
     <li>
@@ -406,7 +426,6 @@
     <dt>October 2021–</dt>
     <dd><a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/algebraic-geometry" target="_blank">Algebraic Geometry Seminar</a></dd>
     <dd>Kyoto University</dd>
-    <dd>with Yuji Odaka, Tatsuro Kawakami and Teppei Takamatsu</dd>
   </dl>
   <h3>Teaching</h3>
   Lectures at Kyoto University:
@@ -482,5 +501,11 @@
       <dd>Lecturer: Naotake Takao</dd>
   </dl>
   <div style="text-align:right">$\square$</div>
+  <script>
+    document.querySelectorAll('.bracket').forEach(list => {
+      const c = list.querySelectorAll('li').length + 1;
+      list.style.counterReset = `list ${c}`;
+    });
+  </script>
 </body>
 </html>
