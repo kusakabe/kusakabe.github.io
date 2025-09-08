@@ -1,608 +1,692 @@
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Yuta Kusakabe</title>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
-    };
-  </script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <style>
-    body {
-      margin:5%;
-    }
-    hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, white, black, white);
-    }
-    dt {
-      float:left;
-      clear:left;
-      width:13em;
-    }
-    dd {
-      margin-left:13em;
-    }
-    ol.bracket {
-      margin-left: 0em;
-    }
-    ol.bracket>li {
-      list-style-type: none;
-      counter-increment: list -1;
-      position: relative;
-    }
-    ol.bracket>li:before {
-      content: '[' counter(list) ']';
-      display: inline-block;
-      text-align: right;
-      position: absolute;
-      margin-left: -3.5em;
-      width: 3em;
-    }
-  </style>
-  <meta name="google-site-verification" content="k6VtneW2UJiDRpWBJKTtH1G_aAvgiQw4t1DRMgDrKYY" />
+	<meta charset="UTF-8">
+	<title>Yuta Kusakabe</title>
+	<script>
+		MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']]
+			}
+		};
+	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<style>
+		body {
+			margin:5%;
+		}
+		hr {
+			border: 0;
+			height: 1px;
+			background-image: linear-gradient(to right, white, black, white);
+		}
+		dt {
+			float:left;
+			clear:left;
+			width:13em;
+		}
+		dd {
+			margin-left:13em;
+		}
+		ol.bracket {
+			margin-left: 0em;
+		}
+		ol.bracket>li {
+			list-style-type: none;
+			counter-increment: list -1;
+			position: relative;
+		}
+		ol.bracket>li:before {
+			content: '[' counter(list) ']';
+			display: inline-block;
+			text-align: right;
+			position: absolute;
+			margin-left: -3.5em;
+			width: 3em;
+		}
+	</style>
+	<meta name="google-site-verification" content="k6VtneW2UJiDRpWBJKTtH1G_aAvgiQw4t1DRMgDrKYY" />
 </head>
 <body>
-  <script>
-    var modified = new Date(document.lastModified);
-    var month = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
-    document.write('<div style="text-align:right">Last updated: ' + modified.getDate()+ ' ' + month[modified.getMonth()]
-		+ ' ' + modified.getFullYear() + '</div>');
-  </script>
-  <hr>
-  <a href="img/joku-iko.jpg"><img src="img/joku-iko_s.jpg" style="float:right;width:270px;margin:0px 0px 10px 10px"></a>
-  <h1>Yuta KUSAKABE / <ruby>日下部 佑太<rt>Kusakabe Yuta</rt></ruby></h1>
-  <p>Associate Professor</p>
-  <p>
-    <a href="https://www.math.kyushu-u.ac.jp/" target="_blank">Faculty of Mathematics,
-    Kyushu University</a><br>
-    744 Moto<strong>oka</strong>, Nishi-ku, Fuku<strong>oka</strong> 819-0395, Japan
-  </p>
-  <p><a href="#CV">Curriculum Vitae</a></p>
-  <p>
-    E-mail: kusakabe[at]math.kyushu-u.ac.jp, kusaka<strong>p</strong>e[at]gmail.com</p>
-    Research interests: Several Complex Variables, Complex Geometry<br>
-    Keywords: Oka principle, Oka manifold, Stein space, Gromov ellipticity
-  </p>
-  <p>
-    Photo: Penguins' Jôku-Ikô / 上空移行<br>
-    (cf. Oka's Jôku-Ikô Principle <a href="http://www.nara-wu.ac.jp/aic/gdb/nwugdb/oka/fram/koron_eng.html" target="_blank">[Oka, 1936]</a>)
-  </p>
-  <hr style="clear:right;">
-  <h2>Papers</h2>
-  <ol reversed class="bracket">
-    <li>
-      Oka tubes in holomorphic line bundles. (with F. Forstnerič)<br>
-      Math. Ann., to appear<br>
-      <a href="https://arxiv.org/abs/2310.14871" target="_blank">arXiv:2310.14871</a>
-    </li>
-    <li>
-      On the fundamental groups of subelliptic varieties.<br>
-      <a href="https://arxiv.org/abs/2212.07085" target="_blank">arXiv:2212.07085</a>
-    </li>
-    <li>
-      Surjective morphisms onto subelliptic varieties.<br>
-      <a href="https://arxiv.org/abs/2212.06412" target="_blank">arXiv:2212.06412</a>
-    </li>
-    <li>
-      Oka properties of complements of holomorphically convex sets.<br>
-      <a href="https://doi.org/10.4007/annals.2024.199.2.7" target="_blank">Ann. of Math. (2), 199(2): 899–917, 2024</a><br>
-      <a href="http://arxiv.org/abs/2005.08247" target="_blank">arXiv:2005.08247</a>
-    </li>
-    <li>
-      Thom's jet transversality theorem for regular maps.<br>
-      <a href="https://doi.org/10.1007/s12220-020-00515-x" target="_blank">J. Geom. Anal., 31(6):6031–6041, 2021</a><br>
-      <a href="https://arxiv.org/abs/2004.13539" target="_blank">arXiv:2004.13539</a>
-    </li>
-    <li>
-      An implicit function theorem for sprays and applications to Oka theory.<br>
-      <a href="https://doi.org/10.1142/S0129167X20500718" target="_blank">Internat. J. Math., 31(9):2050071, 9, 2020</a><br>
-      <a href="https://arxiv.org/abs/2004.12397" target="_blank">arXiv:2004.12397</a>
-    </li>
-    <li>
-      Elliptic characterization and unification of Oka maps.<br>
-      <a href="https://doi.org/10.1007/s00209-020-02661-y" target="_blank">Math. Z., 298(3–4):1735–1750, 2021</a><br>
-      <a href="https://arxiv.org/abs/2003.03757" target="_blank">arXiv:2003.03757</a>
-    </li>
-    <li>
-      Oka complements of countable sets and nonelliptic Oka manifolds.<br>
-      <a href="https://doi.org/10.1090/proc/14832" target="_blank">Proc. Amer. Math. Soc., 148(3):1233–1238, 2020</a><br>
-      <a href="https://arxiv.org/abs/1907.12024" target="_blank">arXiv:1907.12024</a>
-    </li>
-    <li>
-      Elliptic characterization and localization of Oka manifolds.<br>
-      <a href="https://doi.org/10.1512/iumj.2021.70.8454" target="_blank">Indiana Univ. Math. J., 70(3):1039–1054, 2021</a><br>
-      <a href="https://arxiv.org/abs/1808.06290" target="_blank">arXiv:1808.06290</a>
-    </li>
-    <li>
-      Dense holomorphic curves in spaces of holomorphic maps and applications to universal maps.<br>
-      <a href="https://doi.org/10.1142/S0129167X17500288" target="_blank">Internat. J. Math., 28(4):1750028, 15, 2017</a><br>
-      <a href="https://arxiv.org/abs/1702.08022" target="_blank">arXiv:1702.08022</a>
-    </li>
-  </ol>
-  <hr>
-  <h2>Miscellaneous</h2>
-  <ol reversed class="bracket">
-    <li>
-      Gromovの楕円幾何学から岡の原理へ</a>. (Japanese)<br>
-      <a href="https://www.gensu.jp/product-category/monthly_magazine/modern_mathematics/" target="_blank">現代数学</a> (連載, 2024年4月号–), 現代数学社, 2024–
-    </li>
-    <li>
-      <a href="pdf/MSJ2021_ellipticity.pdf" target="_blank">岡多様体と楕円性</a>. (Japanese)<br>
-      日本数学会2021年度年会講演アブストラクト, 2021
-    </li>
-    <li>
-      <a href="pdf/kokyuroku_flexibility.pdf" target="_blank">Characterizations of Oka manifolds by holomorphic flexibilities</a>. (Japanese)<br>
-      <a href="http://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2175.html" target="_blank">RIMS Kôkyûroku, 2175:101–107, 2021</a>
-    </li>
-    <li>
-      <a href="pdf/kansuron_ellipticity.pdf" target="_blank">岡の原理と楕円性</a>. (Japanese)<br>
-      第62回函数論シンポジウム講演アブストラクト, 2019
-    </li>
-    <li>
-      <a href="pdf/survey_homotopy.pdf" target="_blank">Survey of holomorphic homotopy theory</a>. (Japanese)<br>
-      代数学特論レポート, 2018
-    </li>
-  </ol>
-  <hr>
-  <h2>Talks</h2>
-  <ol reversed class="bracket">
-    <li>
-      TBA.<br>
-      <a href="https://complex-geometry-and-lie-groups.org/" target="_blank">The 8th Workshop "Complex Geometry and Lie Groups"</a>, Osaka University Nakanoshima Center, 10–14 March 2025
-    </li>
-    <li>
-      Oka tubes in holomorphic line bundles.<br>
-      <a href="https://www.math.aoyama.ac.jp/~ymatsuda/wgf2024/index.html" target="_blank">Workshop on geometry of foliations and its applications</a>, Kyoto University of Education, 20–22 December 2024
-    </li>
-    <li>
-      複素解析幾何と代数幾何におけるGromovの楕円性について.<br>
-      <a href="https://www.math.nagoya-u.ac.jp/ja/research/calendar/data/1731842951-88.html" target="_blank">Algebraic Geometry Seminar</a>, Nagoya University, 19 December 2024
-    </li>
-    <li>
-      Levi問題から岡の原理へ, そして新たなLevi問題へ.<br>
-      <a href="https://www.math.nagoya-u.ac.jp/ja/research/calendar/data/1732069131-56.html" target="_blank">Colloquium</a>, Nagoya University, 18 December 2024
-    </li>
-    <li>
-      輓近岡理論の展望.<br>
-      <a href="https://www.nara-wu.ac.jp/omi/oka_symposium.html" target="_blank">22nd Oka Symposium</a>, Nara Women's University, 30 November–1 December 2024
-    </li>
-    <li>
-      Toward Gromov's Oka principle with growth conditions.<br>
-      <a href="https://math.univ-cotedazur.fr/~stolo/conf/SCVCRDyn24.html" target="_blank">SCV, CR geometry and Dynamics</a>, RIMS, Kyoto University, 25–29 November 2024
-    </li>
-    <li>
-      Oka tubes in holomorphic line bundles.<br>
-      <a href="https://sites.google.com/view/geometry-and-topology2024/" target="_blank">Geometry and Topology 2024</a>, Kyushu University, 16–18 October 2024
-    </li>
-    <li>
-      岡領域と双対Levi問題.<br>
-      <a href="https://www.mathsoc.jp/section/geometry/symp_schedule/geometry_symposium_2024.html" target="_blank">The 71st Geometry Symposium</a>, Kansai University, 10–13 September 2024
-    </li>
-    <li>
-      Oka tubes in holomorphic line bundles. (online)<br>
-      <a href="http://www.mcm.ac.cn/events/lectures/202407/t20240704_791902.html" target="_blank">Morningside Center of Mathematics, Chinese Academy of Sciences</a>, 9 July 2024
-    </li>
-    <li>
-      Oka domains and the dual Levi problem. (online)<br>
-      <a href="http://mcm.amss.cas.cn/events/lectures/202407/t20240704_791901.html" target="_blank">Morningside Center of Mathematics, Chinese Academy of Sciences</a>, 9 July 2024
-    </li>
-    <li>
-      複素解析学における剛性と柔軟性. (online)<br>
-      <a href="https://www.ms.u-tokyo.ac.jp/~yasuyuki/riken2024.htm" target="_blank">Academic Frontier Lecture Series</a>, 3 & 10 July 2024
-    </li>
-    <li>
-      Oka tubes in holomorphic line bundles.<br>
-      <a href="https://www.ms.u-tokyo.ac.jp/seminar/geocomp/past.html" target="_blank">Seminar on Geometric Complex Analysis</a>,
-      The University of Tokyo, 17 June 2024
-    </li>
-    <li>
-      Toward Gromov's Oka principle with growth conditions.<br>
-      <a href="https://sites.google.com/view/scvfukuoka/" target="_blank">Fukuoka Complex Analysis Seminar</a>, Kyushu University, 21 May 2024
-    </li>
-    <li>
-      Levi問題から岡の原理へ, そして新たなLevi問題へ.<br>
-      <a href="https://www.math.kyushu-u.ac.jp/activities/11628/" target="_blank">Colloquium</a>, Kyushu University, 16 May 2024
-    </li>
-    <li>
-      岡領域と双対Levi問題.<br>
-      <a href="https://sites.google.com/view/fcas11/" target="_blank">The 11th Fukuoka Complex Analysis Symposium</a>, Kyushu University, 16 March 2024
-    </li>
-    <li>
-      Dynamical methods in Gromov's elliptic geometry.<br>
-      <a href="https://tkoike.com/conf_2023/2024Jan.html" target="_blank">Workshop on Dynamics in Arithmetic and Complex Geometry and its Applications</a>, Osaka Metropolitan University, 16–19 January 2024
-    </li>
-    <li>
-      Oka tubes in holomorphic line bundles. (online)<br>
-      <a href="https://sites.google.com/view/jialongdeng/seminar-2023/" target="_blank">Online Differential Geometry Seminar</a>, Yau Mathematical Sciences Center, Tsinghua University, 19 December 2023
-    </li>
-    <li>
-      Oka tubes in holomorphic line bundles.<br>
-      <a href="https://sites.google.com/view/2023scvwinter/" target="_blank">Winter Seminar on Several Complex Variables 2023</a>, University of Tsukuba, 15–17 December 2023
-    </li>
-    <li>
-      Gromov's elliptic geometry from the viewpoints of foliations and dynamics.<br>
-      <a href="https://tkoike.com/conf_2023/2023Nov.html" target="_blank">Problems on Foliations and Dynamics in Complex Geometry</a>, RIMS, Kyoto University, 20–22 November 2023
-    </li>
-    <li>
-      Toward Gromov's Oka principle with growth conditions.<br>
-      <a href="https://www.fmf.uni-lj.si/en/research/complex-analysis-seminar/" target="_blank">Complex Analysis Seminar</a>, University of Ljubljana, 10 October 2023
-    </li>
-    <li>
-      Gromov ellipticity in complex analytic geometry and algebraic geometry.<br>
-      <a href="https://sites.google.com/view/ymwscv2023/" target="_blank">Young Mathematicians Workshop on Several Complex Variables 2023</a>, Pusan National University, 9–12 August 2023
-    </li>
-    <li>
-      Surjective morphisms onto Gromov elliptic varieties.<br>
-      <a href="https://www.mn.uio.no/math/english/research/projects/granddrm/events/conferences/oka-theory-and-complex-geometry-2023/" target="_blank">Oka Theory and Complex Geometry Conference, Summer 2023</a>, Sophus Lie Conference Center, Nordfjordeid, 19–23 June 2023
-    </li>
-    <li>
-      Gromov ellipticity in complex analytic geometry and algebraic geometry.<br>
-      <a href="https://conferences.matheo.si/event/40/" target="_blank">Complex Analysis, Geometry, and Dynamics - Portorož 2023</a>, Hotel Histrion, Portorož, 5–9 June 2023
-    </li>
-    <li>
-      Surjective morphisms onto subelliptic varieties.<br>
-      <a href="https://sites.google.com/site/hisashikasuyamath/workshop-on-complex-geometry-in-osaka-2023" target="_blank">Workshop on Complex Geometry in Osaka 2023</a>, Osaka University, 22–24 March 2023
-    </li>
-    <li>
-      複素解析幾何と代数幾何における楕円性について.<br>
-      <a href="https://tkoike.com/complex_analysis_seminar/" target="_blank">OCAMI Complex Analysis Seminar</a>, Osaka Metropolitan University, 21 February 2023
-    </li>
-    <li>
-      Oka theory for algebraic manifolds. (online)<br>
-      <a href="http://www4.math.sci.osaka-u.ac.jp/sembbs2/rirekiThisY.cgi" target="_blank">Algebraic Geometry Seminar</a>, Osaka University, 6 June 2022
-    </li>
-    <li>
-      岡多様体と双対Levi問題.<br>
-      <a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/4849" target="_blank">Colloquium</a>, Kyoto University, 27 April 2022
-    </li>
-    <li>
-      岡多様体と楕円性. (online)<br>
-      <a href="https://www.sci.kagoshima-u.ac.jp/mcs/programs/17AAG.pdf" target="_blank">The 17th Kagoshima Algebra-Analysis-Geometry Seminar</a>, 16–18 February 2022
-    </li>
-    <li>
-      Oka manifolds and ellipticity. (online)<br>
-      <a href="https://www.math.kyoto-u.ac.jp/~hkenta/KTGU/7thWorkshop/index.html" target="_blank">The 7th KTGU Mathematics Workshop for Young Researchers</a>, Kyoto University, 14–15 February 2022
-    </li>
-    <li>
-      Elliptic characterization and unification of Oka maps. (online)<br>
-      <a href="http://www.math.aoyama.ac.jp/~ymatsuda/wgf2021/index.html" target="_blank">Workshop on Geometry of Foliations and its Applications</a>, 10–12 December 2021
-    </li>
-    <li>
-      Oka theory for algebraic manifolds. (online)<br>
-      <a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/4779" target="_blank">Tokyo-Kyoto Algebraic Geometry Seminar</a>, 30 November 2021
-    </li>
-    <li>
-      Oka theory for algebraic manifolds. (online)<br>
-      <a href="https://sites.google.com/view/wasedag2021" target="_blank">Miyako-no-Seihoku Algebraic Geometry Symposium 2021</a>, Waseda University, 17–20 August 2021
-    </li>
-    <li>
-      Oka manifolds and the dual Levi problem. (online)<br>
-      <a href="https://sites.google.com/site/scvhayama/2021" target="_blank">HAYAMA Symposium on Complex Analysis in Several Variables XXII</a>, 22–25 July 2021
-    </li>
-    <li>
-      複素解析学における剛性と柔軟性. (online)<br>
-      <a href="https://www.math.kyoto-u.ac.jp/ja/node/4632" target="_blank">Galois Festival 2021</a>,
-      Kyoto University, 15 June 2021
-    </li>
-    <li>
-      Oka manifolds and the dual Levi problem. (online)<br>
-      <a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/4627" target="_blank">Differential Topology Seminar</a>,
-      Kyoto University, 25 May 2021
-    </li>
-    <li>
-      岡多様体と楕円性. (invited by Complex Analysis Section, online)<br>
-      <a href="https://www.mathsoc.jp/activity/meeting/keio21mar/" target="_blank">MSJ Spring Meeting 2021</a>,
-      Keio University, 15–18 March 2021
-    </li>
-    <li>
-      The Oka principle and the dual Levi problem. (online)<br>
-      <a href="https://tkoike.com/conf_2020/2021FebGrauert.html" target="_blank">Grauert Theory and Recent Complex Geometry</a>,
-      Osaka City University, 6–9 February 2021
-    </li>
-    <li>
-      岡多様体と楕円性. (online)<br>
-      <a href="https://tkoike.com/conf_2020/wakateonline.html" target="_blank">Young Mathematicians Online Workshop on Several Complex Variables</a>,
-      Osaka City University, 25 November–16 December 2020
-    </li>
-    <li>
-      多項式凸集合の補空間の岡性.<br>
-      <a href="http://www4.math.sci.osaka-u.ac.jp/sembbs2/rirekiY2020.cgi" target="_blank">Geometry Seminar</a>,
-      Osaka University, 9 November 2020
-    </li>
-    <li>
-      多項式凸集合の補空間の岡性. (online)<br>
-      <a href="https://www.mathsoc.jp/activity/meeting/kumamoto20sept/" target="_blank">MSJ Autumn Meeting 2020</a>,
-      Kumamoto University, 22–25 September 2020
-    </li>
-    <li>
-      Oka properties of complements of holomorphically convex sets. (online)<br>
-      <a href="https://www.ms.u-tokyo.ac.jp/seminar/2020/sem20-087.html" target="_blank">Seminar on Geometric Complex Analysis</a>,
-      The University of Tokyo, 29 June 2020
-    </li>
-    <li>
-      Elliptic characterization of the Oka principle. (online)<br>
-      <a href="http://e-scv.fmf.uni-lj.si/index.php/activities/conferences-and-schools/214-virtual-conference" target="_blank">Virtual Conference on Complex Analysis and Complex Geometry</a>,
-      Western University's online system OWL, 4 May–14 June 2020
-    </li>
-    <li>
-      Oka complements of countable sets and non-elliptic Oka manifolds.<br>
-      <a href="https://sites.google.com/site/scvwintersemi2019/" target="_blank">Winter Seminar on Several Complex Variables 2019</a>,
-      Tohoku University, 21–23 December 2019
-    </li>
-    <li>
-      柏原の定理と $\partial\bar\partial$-lemma.<br>
-      <a href="http://ktakayuki.github.io/conf2019_2/ktcmid.html" target="_blank">Kodaira's Theory on Complex Manifolds and its Development</a>,
-      Osaka City University, 8–9 December 2019
-    </li>
-    <li>
-      Dense entire curves and Oka manifolds.<br>
-      <a href="https://shotanimoto.wordpress.com/rims-symposia-rational-points-on-higher-dimensional-varieties/" target="_blank">Rational Points on Higher Dimensional Varieties</a>,
-      RIMS, Kyoto University, 2–6 December 2019
-    </li>
-    <li>
-      岡の原理と楕円性.<br>
-      <a href="https://sites.google.com/view/62sympft/" target="_blank">62nd Symposium on Function Theory</a>,
-      Daido University, 2–4 November 2019
-    </li>
-    <li>
-      Elliptic characterization and localization of Oka manifolds.<br>
-      <a href="http://www.math.is.tohoku.ac.jp/~sugawa/TCAS/" target="_blank">Tohoku Complex Analysis Seminar</a>,
-      Tohoku University, 2 October 2019
-    </li>
-    <li>
-      岡多様体と楕円性.<br>
-      <a href="https://sites.google.com/view/casummerseminar2019" target="_blank">54th Summer Seminar on Function Theory</a>,
-      Izu Nagaoka Onsen Otori-so, Shizuoka, 28–30 August 2019
-    </li>
-    <li>
-      Oka principle and relative ellipticity.<br>
-      <a href="https://sites.google.com/view/workshop-hmptcg2019" target="_blank">Workshop on Holomorphic Maps, Pluripotentials and Complex Geometry</a>,
-      Shizuoka Prefecture Gender Equality Center "Azalea", Shizuoka, 26–29 March 2019
-    </li>
-    <li>
-      岡の原理と楕円性 (1 & 2).<br>
-      <a href="https://sites.google.com/view/contsingdiff2019" target="_blank">Contact Structures, Singularities, Differential Equations and Related Topics</a>,
-      Shizuoka Prefecture Gender Equality Center "Azalea", Shizuoka, 28–31 January 2019
-    </li>
-    <li>
-      Elliptic characterization and localization of Oka manifolds.<br>
-      <a href="https://u-lab.my-pharm.ac.jp/~noda/cnf/kanazawa24e.html" target="_blank">The 24th Symposium on Complex Geometry</a>,
-      Shiinoki Cultural Complex, Ishikawa, 13–16 November 2018
-    </li>
-    <li>
-      Elliptic characterization and localization of Oka manifolds.<br>
-      <a href="https://conferences.matheo.si/event/22/" target="_blank">Stein Manifolds and Holomorphic Mappings 2018</a>,
-      University of Ljubljana, 17–21 September 2018
-    </li>
-    <li>
-      Elliptic characterization and localization of Oka manifolds.<br>
-      <a href="https://sites.google.com/site/casummerseminar2018/" target="_blank">53rd Summer Seminar on Function Theory</a>,
-      Active Resorts FUKUOKA YAHATA, Fukuoka, 24–26 August 2018
-    </li>
-    <li>
-      Holomorphic flexibility properties of mapping spaces.<br>
-      <a href="https://sites.google.com/site/scvhayama/2018" target="_blank">HAYAMA Symposium on Complex Analysis in Several Variables XX & Pacific Rim Complex-Symplectic Geometry Conference</a>,
-      Shonan Village Center, Kanagawa, 13–17 July 2018
-    </li>
-    <li>
-      Holomorphic maps with dense images.<br>
-      <a href="https://wwp.shizuoka.ac.jp/masanori-adachi/2017winter/" target="_blank">Winter Seminar on Several Complex Variables 2017</a>,
-      Tokyo University of Science, 22–24 December 2017
-    </li>
-    <li>
-      Dense holomorphic curves in spaces of holomorphic maps.<br>
-      <a href="https://wwp.shizuoka.ac.jp/masanori-adachi/2017ymwscv/" target="_blank">Young Mathematicians Workshop on Several Complex Variables and Complex Geometry 2017</a>,
-      Capital Normal University, 9–11 December 2017
-    </li>
-    <li>
-      Characterizations of Oka manifolds by entire curves.<br>
-      <a href="https://wwp.shizuoka.ac.jp/masanori-adachi/2017rims/" target="_blank">Topology of Pseudoconvex Domains and Analysis of Reproducing Kernels</a>,
-      RIMS, Kyoto University, 20–22 November 2017
-    </li>
-    <li>
-      Dense holomorphic curves and universal holomorphic maps.<br>
-      <a href="https://sites.google.com/site/summerseminar2017/" target="_blank">52nd Summer Seminar on Function Theory</a>,
-      Kanpo no Yado Yanagawa, Fukuoka, 6–8 September 2017
-    </li>
-    <li>
-      Dense holomorphic curves in spaces of holomorphic maps.<br>
-      Seminar on Analytic Geometry,
-      Nagoya University, 1 May 2017
-    </li>
-    <li>
-      Dense holomorphic curves in spaces of holomorphic maps.<br>
-      <a href="https://www.ms.u-tokyo.ac.jp/seminar/2017/sem17-072.html" target="_blank">Seminar on Geometric Complex Analysis</a>,
-      The University of Tokyo, 17 April 2017
-    </li>
-    <li>
-      Dense holomorphic curves in spaces of holomorphic maps.<br>
-      <a href="http://www.math.sci.osaka-u.ac.jp/seminar/semHist2017.html" target="_blank">Geometry Seminar</a>,
-      Osaka University, 10 April 2017
-    </li>
-    <li>
-      Dense holomorphic curves in spaces of holomorphic maps.<br>
-      Komaba Seminar on Complex Geometry,
-      The University of Tokyo, 6–8 March 2017
-    </li>
-    <li>
-      Holomorphic flexibility properties of configuration spaces, symmetric products and Douady spaces.<br>
-      <a href="https://sites.google.com/view/hirokazu-shimauchi/51th-summer-seminar" target="_blank">51st Summer Seminar on Function Theory</a>,
-      Hotel Sekifu, Yamanashi, 2–4 September 2016
-    </li>
-  </ol>
-  <hr>
-  <a name="CV"><h2>Curriculum Vitae</h2></a>
-  Yuta Kusakabe<br>
-  Born on May 22, 1993 in Aichi, Japan.<br>
-  Married, one son.
-  <h3>Education</h3>
-  <dl>
-    <dt>September 2020</dt>
-      <dd>Doctor of Philosophy (Science)</dd>
-      <dd>Graduate School of Science, Osaka University</dd>
-      <dd>Advisor: Katsutoshi Yamanoi</dd>
-    <dt>March 2018</dt>
-      <dd>Master of Science</dd>
-      <dd>Graduate School of Science, Osaka University</dd>
-      <dd>Advisor: Katsutoshi Yamanoi</dd>
-    <dt>March 2016</dt>
-      <dd>Bachelor of Science</dd>
-      <dd>School of Science, Nagoya University</dd>
-      <dd>Advisor: Takeo Ohsawa</dd>
-  </dl>
-  <h3>Employment / Fellowships</h3>
-  <dl>
-    <dt>April 2024–</dt>
-      <dd>Associate Professor</dd>
-      <dd>Faculty of Mathematics, Kyushu University</dd>
-    <dt>December 2020–March 2024</dt>
-      <dd>Assistant Professor</dd>
-      <dd>Department of Mathematics, Graduate School of Science, Kyoto University</dd>
-    <dt>October 2020–November 2020</dt>
-      <dd>JSPS Research Fellow (PD)</dd>
-      <dd>Japan Society for the Promotion of Science</dd>
-    <dt>April 2018–September 2020</dt>
-      <dd>JSPS Research Fellow (DC1)</dd>
-      <dd>Japan Society for the Promotion of Science</dd>
-    <dt>April 2017–March 2018</dt>
-      <dd>Research Assistant</dd>
-      <dd>Graduate School of Science, Osaka University</dd>
-  </dl>
-  <h3>Membership</h3>
-  <dl>
-    <dt>April 2020–</dt>
-      <dd>The Mathematical Society of Japan</dd>
-  </dl>
-  <h3>Grants</h3>
-  <dl>
-    <dt>April 2024–March 2027</dt>
-      <dd>Grant-in-Aid for Early-Career Scientists (Grant Number: <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16919" target="_blank">24K16919</a>)</dd>
-      <dd>Japan Society for the Promotion of Science</dd>
-    <dt>August 2021–March 2025</dt>
-      <dd>Grant-in-Aid for Research Activity Start-up (Grant Number: <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-21K20324/" target="_blank">21K20324</a>)</dd>
-      <dd>Japan Society for the Promotion of Science</dd>
-    <dt>April 2018–March 2021</dt>
-      <dd>Grant-in-Aid for JSPS Fellows (Grant Number: <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-18J20418/" target="_blank">18J20418</a>)</dd>
-      <dd>Japan Society for the Promotion of Science</dd>
-  </dl>
-  <h3>Awards</h3>
-  <dl>
-    <dt>October 2024</dt>
-      <dd><a href="https://www.math.nagoya-u.ac.jp/ja/alumni/hida-prize.html#result-13" target="_blank">13th Award for Encouragement of Alumni and Students (Hida Award)</a></dd>
-      <dd>Alumni Association of the Graduate School of Mathematics, Nagoya University</dd>
-    <dt>September 2020</dt>
-    <dd><a href="https://www.mathsoc.jp/activity/public_relations/press_conference/takebe2020.html" target="_blank">The 2020 MSJ Takebe Katahiro Prize for Encouragement of Young Researchers</a></dd>
-      <dd>The Mathematical Society of Japan</dd>
-  </dl>
-  <h3>Organization</h3>
-  <dl>
-    <dt>August 2024</dt>
-    <dd><a href="https://www2.math.kyushu-u.ac.jp/~kusakabe/YMWSCV2024/" target="_blank">Young Mathematicians Workshop on Several Complex Variables 2024</a></dd>
-    <dd>Osaka Metropolitan University</dd>
-    <dt>April 2024–</dt>
-    <dd><a href="https://sites.google.com/view/scvfukuoka/" target="_blank">Fukuoka Complex Analysis Seminar</a></dd>
-    <dd>Kyushu University & Fukuoka Institute of Technology</dd>
-    <dt>October 2021–March 2024</dt>
-    <dd><a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/algebraic-geometry" target="_blank">Algebraic Geometry Seminar</a></dd>
-    <dd>Kyoto University</dd>
-  </dl>
-  <h3>Teaching</h3>
-  Lectures at Kyushu University:
-  <dl>
-    <dt>October 2024–March 2025</dt>
-      <dd>Survey in Mathematics IV, Exercise</dd>
-      <dd>Department of Mathematics</dd>
-    <dt>April 2024–September 2024</dt>
-      <dd>Survey in Mathematics II, Exercise</dd>
-      <dd>Department of Mathematics</dd>
-    <dt>April 2024–September 2024</dt>
-      <dd>Mathematics Perspective I</dd>
-      <dd>Department of Mathematics</dd>
-  </dl>
-  Lectures at Kyoto University:
-  <dl>
-    <dt>April 2023–September 2023</dt>
-      <dd>Function Theory of a Complex Variable</dd>
-      <dd>Faculty of Science</dd>
-    <dt>April 2023–September 2023</dt>
-      <dd>Exercises in Analysis I</dd>
-      <dd>Faculty of Science</dd>
-    <dt>April 2023–September 2023</dt>
-      <dd>Calculus with Exercises A (T18)</dd>
-      <dd>Liberal Arts and General Education Courses</dd>
-    <dt>April 2023–September 2023</dt>
-      <dd>Calculus with Exercises A (T21)</dd>
-      <dd>Liberal Arts and General Education Courses</dd>
-    <dt>April 2022–September 2022</dt>
-      <dd>Function Theory of a Complex Variable</dd>
-      <dd>Faculty of Science</dd>
-    <dt>April 2022–September 2022</dt>
-      <dd>Exercises in Analysis I</dd>
-      <dd>Faculty of Science</dd>
-    <dt>April 2022–September 2022</dt>
-      <dd>Calculus with Exercises A (T1)</dd>
-      <dd>Liberal Arts and General Education Courses</dd>
-    <dt>April 2022–September 2022</dt>
-      <dd>Calculus with Exercises A (T3)</dd>
-      <dd>Liberal Arts and General Education Courses</dd>
-    <dt>October 2021–March 2022</dt>
-      <dd>Calculus with Exercises B (A1/A2)</dd>
-      <dd>Liberal Arts and General Education Courses</dd>
-    <dt>April 2021–September 2021</dt>
-      <dd>Exercises in Analysis I</dd>
-      <dd>Faculty of Science</dd>
-    <dt>April 2021–September 2021</dt>
-      <dd>Calculus with Exercises A (T1)</dd>
-      <dd>Liberal Arts and General Education Courses</dd>
-    <dt>April 2021–September 2021</dt>
-      <dd>Calculus with Exercises A (T3)</dd>
-      <dd>Liberal Arts and General Education Courses</dd>
-  </dl>
-  Teaching Assistant at Graduate School of Science, Osaka University:
-  <dl>
-    <dt>April 2020–September 2020</dt>
-      <dd>Advanced Complex Analysis (Exercise Session)</dd>
-      <dd>Lecturer: Shinpei Baba</dd>
-    <dt>October 2019–March 2020</dt>
-      <dd>Geometry 2 (Exercise Session)</dd>
-      <dd>Lecturer: Yasuhiro Hara</dd>
-    <dt>October 2019–March 2020</dt>
-      <dd>Geometry 1 (Exercise Session)</dd>
-      <dd>Lecturer: Yoshihiko Matsumoto</dd>
-    <dt>April 2019–September 2019</dt>
-      <dd>Advanced Complex Analysis (Exercise Session)</dd>
-      <dd>Lecturer: Katsutoshi Yamanoi</dd>
-    <dt>April 2019–September 2019<dt>
-      <dd>Advanced Calculus (Exercise Session)</dd>
-      <dd>Lecturer: Takahisa Inui</dd>
-    <dt>October 2018–March 2019</dt>
-      <dd>Complex Analysis (Exercise Session)</dd>
-      <dd>Lecturer: Hideaki Sunagawa</dd>
-    <dt>April 2018–September 2018</dt>
-      <dd>Point-Set Topology and Multivariable Calculus (Exercise Session)</dd>
-      <dd>Lecturer: Kazuki Tokimoto</dd>
-  </dl>
-  Teaching Assistant at Center for Education in Liberal Arts and Sciences, Osaka University:
-  <dl>
-    <dt>October 2017–March 2018</dt>
-      <dd>Calculus B (Problem Session)</dd>
-      <dd>Lecturer: Naotake Takao</dd>
-    <dt>April 2017–September 2017</dt>
-      <dd>Calculus A (Problem Session)</dd>
-      <dd>Lecturer: Naotake Takao</dd>
-  </dl>
-  <div style="text-align:right">$\square$</div>
-  <script>
-    document.querySelectorAll('.bracket').forEach(list => {
-      const c = list.querySelectorAll('li').length + 1;
-      list.style.counterReset = `list ${c}`;
-    });
-  </script>
+	<div style="float:left">
+		Latest: 12月に九州大学にて<a href="https://kusakabe.github.io/2025scvwinter/" target="_blank">多変数関数論冬セミナー</a>および<a href="https://masataka123.github.io/Oka_manifold_2025/" target="_blank">岡多様体の勉強会</a>を開催します.
+	</div>
+	<script>
+		var modified = new Date(document.lastModified);
+		var month = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+		document.write('<div style="text-align:right">Last updated: ' + modified.getDate()+ ' ' + month[modified.getMonth()] + ' ' + modified.getFullYear() + '</div>');
+	</script>
+	<hr>
+	<a href="img/joku-iko.jpg"><img src="img/joku-iko_s.jpg" style="float:right;width:270px;margin:0px 0px 10px 10px"></a>
+	<h1>Yuta KUSAKABE / <ruby>日下部 佑太<rt>Kusakabe Yuta</rt></ruby></h1>
+	<p>Associate Professor</p>
+	<p>
+		<a href="https://www.math.kyushu-u.ac.jp/" target="_blank">Faculty of Mathematics,
+		Kyushu University</a><br>
+		744 Moto<strong>oka</strong>, Nishi-ku, Fuku<strong>oka</strong> 819-0395, Japan
+	</p>
+	<p><a href="#CV">Curriculum Vitae</a></p>
+	<p>
+		E-mail: kusakabe[at]math.kyushu-u.ac.jp, kusaka<strong>p</strong>e[at]gmail.com</p>
+		Research interests: Several Complex Variables, Complex Geometry<br>
+		Keywords: Oka principle, Oka manifold, Stein space, Gromov ellipticity
+	</p>
+	<p>
+		Photo: Penguins' Jôku-Ikô / 上空移行<br>
+		(cf. Oka's Jôku-Ikô Principle <a href="http://www.nara-wu.ac.jp/aic/gdb/nwugdb/oka/fram/koron_eng.html" target="_blank">[Oka, 1936]</a>)
+	</p>
+	<hr style="clear:right;">
+	<h2>Papers</h2>
+	<ol reversed class="bracket">
+		<li>
+			Oka tubes in holomorphic line bundles. (with F. Forstnerič)<br>
+			<a href="https://doi.org/10.1007/s00208-024-03051-z" target="_blank">Math. Ann., 391(4), 5265–5292, 2025</a><br>
+			<a href="https://arxiv.org/abs/2310.14871" target="_blank">arXiv:2310.14871</a>
+		</li>
+		<li>
+			On the fundamental groups of subelliptic varieties.<br>
+			<a href="https://arxiv.org/abs/2212.07085" target="_blank">arXiv:2212.07085</a>
+		</li>
+		<li>
+			Surjective morphisms onto subelliptic varieties.<br>
+			<a href="https://arxiv.org/abs/2212.06412" target="_blank">arXiv:2212.06412</a>
+		</li>
+		<li>
+			Oka properties of complements of holomorphically convex sets.<br>
+			<a href="https://doi.org/10.4007/annals.2024.199.2.7" target="_blank">Ann. of Math. (2), 199(2): 899–917, 2024</a><br>
+			<a href="http://arxiv.org/abs/2005.08247" target="_blank">arXiv:2005.08247</a>
+		</li>
+		<li>
+			Thom's jet transversality theorem for regular maps.<br>
+			<a href="https://doi.org/10.1007/s12220-020-00515-x" target="_blank">J. Geom. Anal., 31(6):6031–6041, 2021</a><br>
+			<a href="https://arxiv.org/abs/2004.13539" target="_blank">arXiv:2004.13539</a>
+		</li>
+		<li>
+			An implicit function theorem for sprays and applications to Oka theory.<br>
+			<a href="https://doi.org/10.1142/S0129167X20500718" target="_blank">Internat. J. Math., 31(9):2050071, 9, 2020</a><br>
+			<a href="https://arxiv.org/abs/2004.12397" target="_blank">arXiv:2004.12397</a>
+		</li>
+		<li>
+			Elliptic characterization and unification of Oka maps.<br>
+			<a href="https://doi.org/10.1007/s00209-020-02661-y" target="_blank">Math. Z., 298(3–4):1735–1750, 2021</a><br>
+			<a href="https://arxiv.org/abs/2003.03757" target="_blank">arXiv:2003.03757</a>
+		</li>
+		<li>
+			Oka complements of countable sets and nonelliptic Oka manifolds.<br>
+			<a href="https://doi.org/10.1090/proc/14832" target="_blank">Proc. Amer. Math. Soc., 148(3):1233–1238, 2020</a><br>
+			<a href="https://arxiv.org/abs/1907.12024" target="_blank">arXiv:1907.12024</a>
+		</li>
+		<li>
+			Elliptic characterization and localization of Oka manifolds.<br>
+			<a href="https://doi.org/10.1512/iumj.2021.70.8454" target="_blank">Indiana Univ. Math. J., 70(3):1039–1054, 2021</a><br>
+			<a href="https://arxiv.org/abs/1808.06290" target="_blank">arXiv:1808.06290</a>
+		</li>
+		<li>
+			Dense holomorphic curves in spaces of holomorphic maps and applications to universal maps.<br>
+			<a href="https://doi.org/10.1142/S0129167X17500288" target="_blank">Internat. J. Math., 28(4):1750028, 15, 2017</a><br>
+			<a href="https://arxiv.org/abs/1702.08022" target="_blank">arXiv:1702.08022</a>
+		</li>
+	</ol>
+	<hr>
+	<h2>Miscellaneous</h2>
+	<ol reversed class="bracket">
+		<li>
+			Gromovの楕円幾何学から岡の原理へ</a>. (Japanese)<br>
+			<a href="https://www.gensu.jp/product-category/monthly_magazine/modern_mathematics/" target="_blank">現代数学</a> (連載, 2024年4月号–2025年8月号 [2025年6月号休載]), 現代数学社, 2024–2025
+		</li>
+		<li>
+			<a href="pdf/MSJ2021_ellipticity.pdf" target="_blank">岡多様体と楕円性</a>. (Japanese)<br>
+			日本数学会2021年度年会講演アブストラクト, 2021
+		</li>
+		<li>
+			<a href="pdf/kokyuroku_flexibility.pdf" target="_blank">Characterizations of Oka manifolds by holomorphic flexibilities</a>. (Japanese)<br>
+			<a href="http://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2175.html" target="_blank">RIMS Kôkyûroku, 2175:101–107, 2021</a>
+		</li>
+		<li>
+			<a href="pdf/kansuron_ellipticity.pdf" target="_blank">岡の原理と楕円性</a>. (Japanese)<br>
+			第62回函数論シンポジウム講演アブストラクト, 2019
+		</li>
+		<li>
+			<a href="pdf/survey_homotopy.pdf" target="_blank">Survey of holomorphic homotopy theory</a>. (Japanese)<br>
+			代数学特論レポート, 2018
+		</li>
+	</ol>
+	<hr>
+	<h2>Talks</h2>
+	<ol reversed class="bracket">
+		<li>
+			Gromov楕円的多様体の擬凸性について.<br>
+			<a href="https://sites.google.com/view/titech-geom-seminar/" target="_blank">Science Tokyo Geometry Seminar</a>,
+			Insutitute of Science Tokyo, 6 June 2025
+		</li>
+		<li>
+			Levi問題から岡の原理へ, そして新たなLevi問題へ.<br>
+			<a href="http://www.math.tohoku.ac.jp/research/colloquium.html" target="_blank">Colloquium</a>,
+			Tohoku University, 19 May 2025
+		</li>
+		<li>
+			Toward Gromov's Oka principle with growth conditions.<br>
+			<a href="https://www2.sci.hokudai.ac.jp/dept/math/event/12677" target="_blank">Seminar of Algebraic Analysis</a>,
+			Hokkaido University, 26 March 2025
+		</li>
+		<li>
+			On pseudoconvexity of Gromov elliptic manifolds.<br>
+			<a href="https://complex-geometry-and-lie-groups.org/" target="_blank">The 8th Workshop "Complex Geometry and Lie Groups"</a>,
+			Osaka University Nakanoshima Center, 10–14 March 2025
+		</li>
+		<li>
+			Oka tubes in holomorphic line bundles.<br>
+			<a href="https://www.math.aoyama.ac.jp/~ymatsuda/wgf2024/index.html" target="_blank">Workshop on geometry of foliations and its applications</a>,
+			Kyoto University of Education, 20–22 December 2024
+		</li>
+		<li>
+			複素解析幾何と代数幾何におけるGromovの楕円性について.<br>
+			<a href="https://www.math.nagoya-u.ac.jp/ja/research/calendar/data/1731842951-88.html" target="_blank">Algebraic Geometry Seminar</a>,
+			Nagoya University, 19 December 2024
+		</li>
+		<li>
+			Levi問題から岡の原理へ, そして新たなLevi問題へ.<br>
+			<a href="https://www.math.nagoya-u.ac.jp/ja/research/calendar/data/1732069131-56.html" target="_blank">Colloquium</a>,
+			Nagoya University, 18 December 2024
+		</li>
+		<li>
+			輓近岡理論の展望.<br>
+			<a href="https://www.nara-wu.ac.jp/omi/oka_symposium.html" target="_blank">22nd Oka Symposium</a>,
+			Nara Women's University, 30 November–1 December 2024
+		</li>
+		<li>
+			Toward Gromov's Oka principle with growth conditions.<br>
+			<a href="https://math.univ-cotedazur.fr/~stolo/conf/SCVCRDyn24.html" target="_blank">SCV, CR geometry and Dynamics</a>,
+			RIMS, Kyoto University, 25–29 November 2024
+		</li>
+		<li>
+			Oka tubes in holomorphic line bundles.<br>
+			<a href="https://sites.google.com/view/geometry-and-topology2024/" target="_blank">Geometry and Topology 2024</a>,
+			Kyushu University, 16–18 October 2024
+		</li>
+		<li>
+			岡領域と双対Levi問題.<br>
+			<a href="https://www.mathsoc.jp/section/geometry/symp_schedule/geometry_symposium_2024.html" target="_blank">The 71st Geometry Symposium</a>,
+			Kansai University, 10–13 September 2024
+		</li>
+		<li>
+			Oka tubes in holomorphic line bundles. (online)<br>
+			<a href="http://www.mcm.ac.cn/events/lectures/202407/t20240704_791902.html" target="_blank">Morningside Center of Mathematics, Chinese Academy of Sciences</a>,
+			9 July 2024
+		</li>
+		<li>
+			Oka domains and the dual Levi problem. (online)<br>
+			<a href="http://mcm.amss.cas.cn/events/lectures/202407/t20240704_791901.html" target="_blank">Morningside Center of Mathematics, Chinese Academy of Sciences</a>,
+			9 July 2024
+		</li>
+		<li>
+			Oka tubes in holomorphic line bundles.<br>
+			<a href="https://www.ms.u-tokyo.ac.jp/seminar/geocomp/past.html" target="_blank">Seminar on Geometric Complex Analysis</a>,
+			The University of Tokyo, 17 June 2024
+		</li>
+		<li>
+			Toward Gromov's Oka principle with growth conditions.<br>
+			<a href="https://sites.google.com/view/scvfukuoka/" target="_blank">Fukuoka Complex Analysis Seminar</a>,
+			Kyushu University, 21 May 2024
+		</li>
+		<li>
+			Levi問題から岡の原理へ, そして新たなLevi問題へ.<br>
+			<a href="https://www.math.kyushu-u.ac.jp/activities/11628/" target="_blank">Colloquium</a>,
+			Kyushu University, 16 May 2024
+		</li>
+		<li>
+			岡領域と双対Levi問題.<br>
+			<a href="https://sites.google.com/view/fcas11/" target="_blank">The 11th Fukuoka Complex Analysis Symposium</a>,
+			Kyushu University, 16 March 2024
+		</li>
+		<li>
+			Dynamical methods in Gromov's elliptic geometry.<br>
+			<a href="https://tkoike.com/conf_2023/2024Jan.html" target="_blank">Workshop on Dynamics in Arithmetic and Complex Geometry and its Applications</a>,
+			Osaka Metropolitan University, 16–19 January 2024
+		</li>
+		<li>
+			Oka tubes in holomorphic line bundles. (online)<br>
+			<a href="https://sites.google.com/view/jialongdeng/seminar-2023/" target="_blank">Online Differential Geometry Seminar</a>,
+			Yau Mathematical Sciences Center, Tsinghua University, 19 December 2023
+		</li>
+		<li>
+			Oka tubes in holomorphic line bundles.<br>
+			<a href="https://sites.google.com/view/2023scvwinter/" target="_blank">Winter Seminar on Several Complex Variables 2023</a>,
+			University of Tsukuba, 15–17 December 2023
+		</li>
+		<li>
+			Gromov's elliptic geometry from the viewpoints of foliations and dynamics.<br>
+			<a href="https://tkoike.com/conf_2023/2023Nov.html" target="_blank">Problems on Foliations and Dynamics in Complex Geometry</a>,
+			RIMS, Kyoto University, 20–22 November 2023
+		</li>
+		<li>
+			Toward Gromov's Oka principle with growth conditions.<br>
+			<a href="https://www.fmf.uni-lj.si/en/research/complex-analysis-seminar/" target="_blank">Complex Analysis Seminar</a>,
+			University of Ljubljana, 10 October 2023
+		</li>
+		<li>
+			Gromov ellipticity in complex analytic geometry and algebraic geometry.<br>
+			<a href="https://sites.google.com/view/ymwscv2023/" target="_blank">Young Mathematicians Workshop on Several Complex Variables 2023</a>,
+			Pusan National University, 9–12 August 2023
+		</li>
+		<li>
+			Surjective morphisms onto Gromov elliptic varieties.<br>
+			<a href="https://www.mn.uio.no/math/english/research/projects/granddrm/events/conferences/oka-theory-and-complex-geometry-2023/" target="_blank">Oka Theory and Complex Geometry Conference, Summer 2023</a>,
+			Sophus Lie Conference Center, Nordfjordeid, 19–23 June 2023
+		</li>
+		<li>
+			Gromov ellipticity in complex analytic geometry and algebraic geometry.<br>
+			<a href="https://conferences.matheo.si/event/40/" target="_blank">Complex Analysis, Geometry, and Dynamics - Portorož 2023</a>,
+			Hotel Histrion, Portorož, 5–9 June 2023
+		</li>
+		<li>
+			Surjective morphisms onto subelliptic varieties.<br>
+			<a href="https://sites.google.com/site/hisashikasuyamath/workshop-on-complex-geometry-in-osaka-2023" target="_blank">Workshop on Complex Geometry in Osaka 2023</a>,
+			Osaka University, 22–24 March 2023
+		</li>
+		<li>
+			複素解析幾何と代数幾何における楕円性について.<br>
+			<a href="https://tkoike.com/complex_analysis_seminar/" target="_blank">OCAMI Complex Analysis Seminar</a>,
+			Osaka Metropolitan University, 21 February 2023
+		</li>
+		<li>
+			Oka theory for algebraic manifolds. (online)<br>
+			<a href="http://www4.math.sci.osaka-u.ac.jp/sembbs2/rirekiThisY.cgi" target="_blank">Algebraic Geometry Seminar</a>,
+			Osaka University, 6 June 2022
+		</li>
+		<li>
+			岡多様体と双対Levi問題.<br>
+			<a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/4849" target="_blank">Colloquium</a>,
+			Kyoto University, 27 April 2022
+		</li>
+		<li>
+			岡多様体と楕円性. (online)<br>
+			<a href="https://www.sci.kagoshima-u.ac.jp/mcs/programs/17AAG.pdf" target="_blank">The 17th Kagoshima Algebra-Analysis-Geometry Seminar</a>,
+			16–18 February 2022
+		</li>
+		<li>
+			Oka manifolds and ellipticity. (online)<br>
+			<a href="https://www.math.kyoto-u.ac.jp/~hkenta/KTGU/7thWorkshop/index.html" target="_blank">The 7th KTGU Mathematics Workshop for Young Researchers</a>,
+			Kyoto University, 14–15 February 2022
+		</li>
+		<li>
+			Elliptic characterization and unification of Oka maps. (online)<br>
+			<a href="http://www.math.aoyama.ac.jp/~ymatsuda/wgf2021/index.html" target="_blank">Workshop on Geometry of Foliations and its Applications</a>,
+			10–12 December 2021
+		</li>
+		<li>
+			Oka theory for algebraic manifolds. (online)<br>
+			<a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/4779" target="_blank">Tokyo-Kyoto Algebraic Geometry Seminar</a>,
+			30 November 2021
+		</li>
+		<li>
+			Oka theory for algebraic manifolds. (online)<br>
+			<a href="https://sites.google.com/view/wasedag2021" target="_blank">Miyako-no-Seihoku Algebraic Geometry Symposium 2021</a>,
+			Waseda University, 17–20 August 2021
+		</li>
+		<li>
+			Oka manifolds and the dual Levi problem. (online)<br>
+			<a href="https://sites.google.com/site/scvhayama/2021" target="_blank">HAYAMA Symposium on Complex Analysis in Several Variables XXII</a>,
+			22–25 July 2021
+		</li>
+		<li>
+			複素解析学における剛性と柔軟性. (online)<br>
+			<a href="https://www.math.kyoto-u.ac.jp/ja/node/4632" target="_blank">Galois Festival 2021</a>,
+			Kyoto University, 15 June 2021
+		</li>
+		<li>
+			Oka manifolds and the dual Levi problem. (online)<br>
+			<a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/4627" target="_blank">Differential Topology Seminar</a>,
+			Kyoto University, 25 May 2021
+		</li>
+		<li>
+			岡多様体と楕円性. (invited by Complex Analysis Section, online)<br>
+			<a href="https://www.mathsoc.jp/activity/meeting/keio21mar/" target="_blank">MSJ Spring Meeting 2021</a>,
+			Keio University, 15–18 March 2021
+		</li>
+		<li>
+			The Oka principle and the dual Levi problem. (online)<br>
+			<a href="https://tkoike.com/conf_2020/2021FebGrauert.html" target="_blank">Grauert Theory and Recent Complex Geometry</a>,
+			Osaka City University, 6–9 February 2021
+		</li>
+		<li>
+			岡多様体と楕円性. (online)<br>
+			<a href="https://tkoike.com/conf_2020/wakateonline.html" target="_blank">Young Mathematicians Online Workshop on Several Complex Variables</a>,
+			Osaka City University, 25 November–16 December 2020
+		</li>
+		<li>
+			多項式凸集合の補空間の岡性.<br>
+			<a href="http://www4.math.sci.osaka-u.ac.jp/sembbs2/rirekiY2020.cgi" target="_blank">Geometry Seminar</a>,
+			Osaka University, 9 November 2020
+		</li>
+		<li>
+			多項式凸集合の補空間の岡性. (online)<br>
+			<a href="https://www.mathsoc.jp/activity/meeting/kumamoto20sept/" target="_blank">MSJ Autumn Meeting 2020</a>,
+			Kumamoto University, 22–25 September 2020
+		</li>
+		<li>
+			Oka properties of complements of holomorphically convex sets. (online)<br>
+			<a href="https://www.ms.u-tokyo.ac.jp/seminar/2020/sem20-087.html" target="_blank">Seminar on Geometric Complex Analysis</a>,
+			The University of Tokyo, 29 June 2020
+		</li>
+		<li>
+			Elliptic characterization of the Oka principle. (online)<br>
+			<a href="http://e-scv.fmf.uni-lj.si/index.php/activities/conferences-and-schools/214-virtual-conference" target="_blank">Virtual Conference on Complex Analysis and Complex Geometry</a>,
+			Western University's online system OWL, 4 May–14 June 2020
+		</li>
+		<li>
+			Oka complements of countable sets and non-elliptic Oka manifolds.<br>
+			<a href="https://sites.google.com/site/scvwintersemi2019/" target="_blank">Winter Seminar on Several Complex Variables 2019</a>,
+			Tohoku University, 21–23 December 2019
+		</li>
+		<li>
+			柏原の定理と $\partial\bar\partial$-lemma.<br>
+			<a href="http://ktakayuki.github.io/conf2019_2/ktcmid.html" target="_blank">Kodaira's Theory on Complex Manifolds and its Development</a>,
+			Osaka City University, 8–9 December 2019
+		</li>
+		<li>
+			Dense entire curves and Oka manifolds.<br>
+			<a href="https://shotanimoto.wordpress.com/rims-symposia-rational-points-on-higher-dimensional-varieties/" target="_blank">Rational Points on Higher Dimensional Varieties</a>,
+			RIMS, Kyoto University, 2–6 December 2019
+		</li>
+		<li>
+			岡の原理と楕円性.<br>
+			<a href="https://sites.google.com/view/62sympft/" target="_blank">62nd Symposium on Function Theory</a>,
+			Daido University, 2–4 November 2019
+		</li>
+		<li>
+			Elliptic characterization and localization of Oka manifolds.<br>
+			<a href="http://www.math.is.tohoku.ac.jp/~sugawa/TCAS/" target="_blank">Tohoku Complex Analysis Seminar</a>,
+			Tohoku University, 2 October 2019
+		</li>
+		<li>
+			岡多様体と楕円性.<br>
+			<a href="https://sites.google.com/view/casummerseminar2019" target="_blank">54th Summer Seminar on Function Theory</a>,
+			Izu Nagaoka Onsen Otori-so, Shizuoka, 28–30 August 2019
+		</li>
+		<li>
+			Oka principle and relative ellipticity.<br>
+			<a href="https://sites.google.com/view/workshop-hmptcg2019" target="_blank">Workshop on Holomorphic Maps, Pluripotentials and Complex Geometry</a>,
+			Shizuoka Prefecture Gender Equality Center "Azalea", Shizuoka, 26–29 March 2019
+		</li>
+		<li>
+			岡の原理と楕円性 (1 & 2).<br>
+			<a href="https://sites.google.com/view/contsingdiff2019" target="_blank">Contact Structures, Singularities, Differential Equations and Related Topics</a>,
+			Shizuoka Prefecture Gender Equality Center "Azalea", Shizuoka, 28–31 January 2019
+		</li>
+		<li>
+			Elliptic characterization and localization of Oka manifolds.<br>
+			<a href="https://u-lab.my-pharm.ac.jp/~noda/cnf/kanazawa24e.html" target="_blank">The 24th Symposium on Complex Geometry</a>,
+			Shiinoki Cultural Complex, Ishikawa, 13–16 November 2018
+		</li>
+		<li>
+			Elliptic characterization and localization of Oka manifolds.<br>
+			<a href="https://conferences.matheo.si/event/22/" target="_blank">Stein Manifolds and Holomorphic Mappings 2018</a>,
+			University of Ljubljana, 17–21 September 2018
+		</li>
+		<li>
+			Elliptic characterization and localization of Oka manifolds.<br>
+			<a href="https://sites.google.com/site/casummerseminar2018/" target="_blank">53rd Summer Seminar on Function Theory</a>,
+			Active Resorts FUKUOKA YAHATA, Fukuoka, 24–26 August 2018
+		</li>
+		<li>
+			Holomorphic flexibility properties of mapping spaces.<br>
+			<a href="https://sites.google.com/site/scvhayama/2018" target="_blank">HAYAMA Symposium on Complex Analysis in Several Variables XX & Pacific Rim Complex-Symplectic Geometry Conference</a>,
+			Shonan Village Center, Kanagawa, 13–17 July 2018
+		</li>
+		<li>
+			Holomorphic maps with dense images.<br>
+			<a href="https://wwp.shizuoka.ac.jp/masanori-adachi/2017winter/" target="_blank">Winter Seminar on Several Complex Variables 2017</a>,
+			Tokyo University of Science, 22–24 December 2017
+		</li>
+		<li>
+			Dense holomorphic curves in spaces of holomorphic maps.<br>
+			<a href="https://wwp.shizuoka.ac.jp/masanori-adachi/2017ymwscv/" target="_blank">Young Mathematicians Workshop on Several Complex Variables and Complex Geometry 2017</a>,
+			Capital Normal University, 9–11 December 2017
+		</li>
+		<li>
+			Characterizations of Oka manifolds by entire curves.<br>
+			<a href="https://wwp.shizuoka.ac.jp/masanori-adachi/2017rims/" target="_blank">Topology of Pseudoconvex Domains and Analysis of Reproducing Kernels</a>,
+			RIMS, Kyoto University, 20–22 November 2017
+		</li>
+		<li>
+			Dense holomorphic curves and universal holomorphic maps.<br>
+			<a href="https://sites.google.com/site/summerseminar2017/" target="_blank">52nd Summer Seminar on Function Theory</a>,
+			Kanpo no Yado Yanagawa, Fukuoka, 6–8 September 2017
+		</li>
+		<li>
+			Dense holomorphic curves in spaces of holomorphic maps.<br>
+			Seminar on Analytic Geometry,
+			Nagoya University, 1 May 2017
+		</li>
+		<li>
+			Dense holomorphic curves in spaces of holomorphic maps.<br>
+			<a href="https://www.ms.u-tokyo.ac.jp/seminar/2017/sem17-072.html" target="_blank">Seminar on Geometric Complex Analysis</a>,
+			The University of Tokyo, 17 April 2017
+		</li>
+		<li>
+			Dense holomorphic curves in spaces of holomorphic maps.<br>
+			<a href="http://www.math.sci.osaka-u.ac.jp/seminar/semHist2017.html" target="_blank">Geometry Seminar</a>,
+			Osaka University, 10 April 2017
+		</li>
+		<li>
+			Dense holomorphic curves in spaces of holomorphic maps.<br>
+			Komaba Seminar on Complex Geometry,
+			The University of Tokyo, 6–8 March 2017
+		</li>
+		<li>
+			Holomorphic flexibility properties of configuration spaces, symmetric products and Douady spaces.<br>
+			<a href="https://sites.google.com/view/hirokazu-shimauchi/51th-summer-seminar" target="_blank">51st Summer Seminar on Function Theory</a>,
+			Hotel Sekifu, Yamanashi, 2–4 September 2016
+		</li>
+	</ol>
+	<hr>
+	<a name="CV"><h2>Curriculum Vitae</h2></a>
+	Yuta Kusakabe<br>
+	Born on May 22, 1993 in Aichi, Japan.<br>
+	Married, one son.
+	<h3>Education</h3>
+	<dl>
+		<dt>September 2020</dt>
+			<dd>Doctor of Philosophy (Science)</dd>
+			<dd>Graduate School of Science, Osaka University</dd>
+			<dd>Advisor: Katsutoshi Yamanoi</dd>
+		<dt>March 2018</dt>
+			<dd>Master of Science</dd>
+			<dd>Graduate School of Science, Osaka University</dd>
+			<dd>Advisor: Katsutoshi Yamanoi</dd>
+		<dt>March 2016</dt>
+			<dd>Bachelor of Science</dd>
+			<dd>School of Science, Nagoya University</dd>
+			<dd>Advisor: Takeo Ohsawa</dd>
+	</dl>
+	<h3>Employment / Fellowships</h3>
+	<dl>
+		<dt>April 2024–</dt>
+			<dd>Associate Professor</dd>
+			<dd>Faculty of Mathematics, Kyushu University</dd>
+		<dt>December 2020–March 2024</dt>
+			<dd>Assistant Professor</dd>
+			<dd>Department of Mathematics, Graduate School of Science, Kyoto University</dd>
+		<dt>October 2020–November 2020</dt>
+			<dd>JSPS Research Fellow (PD)</dd>
+			<dd>Japan Society for the Promotion of Science</dd>
+		<dt>April 2018–September 2020</dt>
+			<dd>JSPS Research Fellow (DC1)</dd>
+			<dd>Japan Society for the Promotion of Science</dd>
+		<dt>April 2017–March 2018</dt>
+			<dd>Research Assistant</dd>
+			<dd>Graduate School of Science, Osaka University</dd>
+	</dl>
+	<h3>Membership</h3>
+	<dl>
+		<dt>April 2020–</dt>
+			<dd>The Mathematical Society of Japan</dd>
+	</dl>
+	<h3>Grants</h3>
+	<dl>
+		<dt>April 2024–March 2027</dt>
+			<dd>Grant-in-Aid for Early-Career Scientists (Grant Number: <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16919" target="_blank">24K16919</a>)</dd>
+			<dd>Japan Society for the Promotion of Science</dd>
+		<dt>August 2021–March 2025</dt>
+			<dd>Grant-in-Aid for Research Activity Start-up (Grant Number: <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-21K20324/" target="_blank">21K20324</a>)</dd>
+			<dd>Japan Society for the Promotion of Science</dd>
+		<dt>April 2018–March 2021</dt>
+			<dd>Grant-in-Aid for JSPS Fellows (Grant Number: <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-18J20418/" target="_blank">18J20418</a>)</dd>
+			<dd>Japan Society for the Promotion of Science</dd>
+	</dl>
+	<h3>Awards</h3>
+	<dl>
+		<dt>October 2024</dt>
+			<dd><a href="https://www.math.nagoya-u.ac.jp/ja/alumni/hida-prize.html#result-13" target="_blank">13th Award for Encouragement of Alumni and Students (Hida Award)</a></dd>
+			<dd>Alumni Association of the Graduate School of Mathematics, Nagoya University</dd>
+		<dt>September 2020</dt>
+			<dd><a href="https://www.mathsoc.jp/activity/public_relations/press_conference/takebe2020.html" target="_blank">The 2020 MSJ Takebe Katahiro Prize for Encouragement of Young Researchers</a></dd>
+			<dd>The Mathematical Society of Japan</dd>
+	</dl>
+	<h3>Organization</h3>
+	<dl>
+		<dt>December 2025</dt>
+			<dd><a href="https://kusakabe.github.io/2025scvwinter/" target="_blank">Winter Seminar on Several Complex Variables 2025</a></dd>
+			<dd>Kyushu University</dd>
+		<dt>December 2025</dt>
+			<dd><a href="https://masataka123.github.io/Oka_manifold_2025/" target="_blank">岡多様体の勉強会</a></dd>
+			<dd>Kyushu University</dd>
+		<dt>August 2025</dt>
+			<dd><a href="http://math0.bnu.edu.cn/~wangzw/YMWSCV2025.html" target="_blank">Young Mathematician Workshop on Several Complex Variables 2025</a></dd>
+			<dd>Beijing Normal University</dd>
+		<dt>August 2024</dt>
+			<dd><a href="https://www2.math.kyushu-u.ac.jp/~kusakabe/YMWSCV2024/" target="_blank">Young Mathematicians Workshop on Several Complex Variables 2024</a></dd>
+			<dd>Osaka Metropolitan University</dd>
+		<dt>April 2024–</dt>
+			<dd><a href="https://sites.google.com/view/scvfukuoka/" target="_blank">Fukuoka Complex Analysis Seminar</a></dd>
+			<dd>Kyushu University & Fukuoka Institute of Technology</dd>
+		<dt>October 2021–March 2024</dt>
+			<dd><a href="https://www.math.kyoto-u.ac.jp/ja/event/seminar/algebraic-geometry" target="_blank">Algebraic Geometry Seminar</a></dd>
+			<dd>Kyoto University</dd>
+	</dl>
+	<h3>Teaching</h3>
+	Student Supervision:
+	<dl>
+		<dt>Master's</dt>
+			<dd>3 (in progress)</dd>
+		<dt>Undergraduate</dt>
+			<dd>3 (in progress) + 3 (October 2025–)</dd>
+	</dl>
+	Invited Lectures:
+	<dl>
+		<dt>May 2025</dt>
+			<dd>楕円複素幾何学とその応用</dd>
+			<dd><a href="http://www.math.tohoku.ac.jp/research/intensive.html" target="_blank">Intensive Lecture</a>, Tohoku University</dd>
+		<dt>July 2024</dt>
+			<dd>複素解析学における剛性と柔軟性</dd>
+			<dd><a href="https://www.ms.u-tokyo.ac.jp/~yasuyuki/riken2024.htm" target="_blank">Academic Frontier Lecture Series</a>, online</dd>
+	</dl>
+	Lectures at Kyushu University:
+	<dl>
+		<dt>October 2025–March 2026</dt>
+			<dd>Survey in Mathematics IV</dd>
+			<dd>Department of Mathematics</dd>
+		<dt>October 2025–March 2026</dt>
+			<dd>Calculus II</dd>
+			<dd>KIKAN Education</dd>
+		<dt>April 2025–September 2025</dt>
+			<dd>Complex Analysis</dd>
+			<dd>Graduate School of Mathematics</dd>
+		<dt>April 2025–September 2025</dt>
+			<dd>Introductory Seminar I</dd>
+			<dd>Department of Mathematics</dd>
+		<dt>April 2025–September 2025</dt>
+			<dd>Calculus I</dd>
+			<dd>KIKAN Education</dd>
+		<dt>October 2024–March 2025</dt>
+			<dd>Survey in Mathematics IV, Exercise</dd>
+			<dd>Department of Mathematics</dd>
+		<dt>April 2024–September 2024</dt>
+			<dd>Survey in Mathematics II, Exercise</dd>
+			<dd>Department of Mathematics</dd>
+		<dt>April 2024–September 2024</dt>
+			<dd>Mathematics Perspective I</dd>
+			<dd>Department of Mathematics</dd>
+	</dl>
+	Lectures at Kyoto University:
+	<dl>
+		<dt>April 2023–September 2023</dt>
+			<dd>Function Theory of a Complex Variable</dd>
+			<dd>Faculty of Science</dd>
+		<dt>April 2023–September 2023</dt>
+			<dd>Exercises in Analysis I</dd>
+			<dd>Faculty of Science</dd>
+		<dt>April 2023–September 2023</dt>
+			<dd>Calculus with Exercises A (T18)</dd>
+			<dd>Liberal Arts and General Education Courses</dd>
+		<dt>April 2023–September 2023</dt>
+			<dd>Calculus with Exercises A (T21)</dd>
+			<dd>Liberal Arts and General Education Courses</dd>
+		<dt>April 2022–September 2022</dt>
+			<dd>Function Theory of a Complex Variable</dd>
+			<dd>Faculty of Science</dd>
+		<dt>April 2022–September 2022</dt>
+			<dd>Exercises in Analysis I</dd>
+			<dd>Faculty of Science</dd>
+		<dt>April 2022–September 2022</dt>
+			<dd>Calculus with Exercises A (T1)</dd>
+			<dd>Liberal Arts and General Education Courses</dd>
+		<dt>April 2022–September 2022</dt>
+			<dd>Calculus with Exercises A (T3)</dd>
+			<dd>Liberal Arts and General Education Courses</dd>
+		<dt>October 2021–March 2022</dt>
+			<dd>Calculus with Exercises B (A1/A2)</dd>
+			<dd>Liberal Arts and General Education Courses</dd>
+		<dt>April 2021–September 2021</dt>
+			<dd>Exercises in Analysis I</dd>
+			<dd>Faculty of Science</dd>
+		<dt>April 2021–September 2021</dt>
+			<dd>Calculus with Exercises A (T1)</dd>
+			<dd>Liberal Arts and General Education Courses</dd>
+		<dt>April 2021–September 2021</dt>
+			<dd>Calculus with Exercises A (T3)</dd>
+			<dd>Liberal Arts and General Education Courses</dd>
+	</dl>
+	Teaching Assistant at Graduate School of Science, Osaka University:
+	<dl>
+		<dt>April 2020–September 2020</dt>
+			<dd>Advanced Complex Analysis (Exercise Session)</dd>
+			<dd>Lecturer: Shinpei Baba</dd>
+		<dt>October 2019–March 2020</dt>
+			<dd>Geometry 2 (Exercise Session)</dd>
+			<dd>Lecturer: Yasuhiro Hara</dd>
+		<dt>October 2019–March 2020</dt>
+			<dd>Geometry 1 (Exercise Session)</dd>
+			<dd>Lecturer: Yoshihiko Matsumoto</dd>
+		<dt>April 2019–September 2019</dt>
+			<dd>Advanced Complex Analysis (Exercise Session)</dd>
+			<dd>Lecturer: Katsutoshi Yamanoi</dd>
+		<dt>April 2019–September 2019<dt>
+			<dd>Advanced Calculus (Exercise Session)</dd>
+			<dd>Lecturer: Takahisa Inui</dd>
+		<dt>October 2018–March 2019</dt>
+			<dd>Complex Analysis (Exercise Session)</dd>
+			<dd>Lecturer: Hideaki Sunagawa</dd>
+		<dt>April 2018–September 2018</dt>
+			<dd>Point-Set Topology and Multivariable Calculus (Exercise Session)</dd>
+			<dd>Lecturer: Kazuki Tokimoto</dd>
+	</dl>
+	Teaching Assistant at Center for Education in Liberal Arts and Sciences, Osaka University:
+	<dl>
+		<dt>October 2017–March 2018</dt>
+			<dd>Calculus B (Problem Session)</dd>
+			<dd>Lecturer: Naotake Takao</dd>
+		<dt>April 2017–September 2017</dt>
+			<dd>Calculus A (Problem Session)</dd>
+			<dd>Lecturer: Naotake Takao</dd>
+	</dl>
+	<div style="text-align:right">$\square$</div>
+	<script>
+		document.querySelectorAll('.bracket').forEach(list => {
+			const c = list.querySelectorAll('li').length + 1;
+			list.style.counterReset = `list ${c}`;
+		});
+	</script>
 </body>
 </html>
